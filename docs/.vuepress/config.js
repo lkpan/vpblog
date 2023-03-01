@@ -1,6 +1,8 @@
+const moment = require('moment');
+
 module.exports = {
   themeConfig: {
-      lastUpdated: '更新时间', // string | boolean
+      lastUpdated: '上次修改时间', // string | boolean
       logo: '/assets/img/logo.png',
       nav: [
         { text: 'Home', link: '/' },
@@ -31,6 +33,17 @@ module.exports = {
       },
       ]
       ,
+      plugins: [
+        [
+          '@vuepress/last-updated',
+          {
+            transformer: (timestamp) => {
+              moment.locale('zh-cn')
+              return moment(timestamp).fromNow('LLLL')
+            }
+          }
+        ]
+      ]
       
       // 禁用导航栏
       // navbar: false
