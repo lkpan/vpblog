@@ -5,7 +5,72 @@ export const siteData = {
   "title": "",
   "description": "",
   "base": "/",
-  "headTags": [],
+  "headTags": [
+    [
+      "link",
+      {
+        "rel": "icon",
+        "href": "/logo.png"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "manifest",
+        "href": "/manifest.json"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "theme-color",
+        "content": "#3eaf7c"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "apple-mobile-web-app-capable",
+        "content": "yes"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "apple-mobile-web-app-status-bar-style",
+        "content": "black"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "apple-touch-icon",
+        "href": "/icons/apple-touch-icon-152x152.png"
+      }
+    ],
+    [
+      "link",
+      {
+        "rel": "mask-icon",
+        "href": "/icons/safari-pinned-tab.svg",
+        "color": "#3eaf7c"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "msapplication-TileImage",
+        "content": "/icons/msapplication-icon-144x144.png"
+      }
+    ],
+    [
+      "meta",
+      {
+        "name": "msapplication-TileColor",
+        "content": "#000000"
+      }
+    ]
+  ],
   "pages": [
     {
       "title": "Home",
@@ -42,43 +107,10 @@ export const siteData = {
         "slidebar": "auto",
         "title": "关于我"
       },
-      "regularPath": "/about.html",
-      "relativePath": "about.md",
-      "key": "v-e2914694",
-      "path": "/about.html",
-      "headers": [
-        {
-          "level": 2,
-          "title": "关于我",
-          "slug": "关于我"
-        },
-        {
-          "level": 2,
-          "title": "这是about",
-          "slug": "这是about"
-        },
-        {
-          "level": 2,
-          "title": "二级标题",
-          "slug": "二级标题"
-        },
-        {
-          "level": 3,
-          "title": "三级标题",
-          "slug": "三级标题"
-        }
-      ]
-    },
-    {
-      "title": "关于我",
-      "frontmatter": {
-        "slidebar": "auto",
-        "title": "关于我"
-      },
-      "regularPath": "/about/about.html",
-      "relativePath": "about/about.md",
-      "key": "v-ddaa29ae",
-      "path": "/about/about.html",
+      "regularPath": "/Vue/about.html",
+      "relativePath": "Vue/about.md",
+      "key": "v-658ddbee",
+      "path": "/Vue/about.html",
       "headers": [
         {
           "level": 2,
@@ -111,6 +143,39 @@ export const siteData = {
       "path": "/css/"
     },
     {
+      "title": "关于我",
+      "frontmatter": {
+        "slidebar": "auto",
+        "title": "关于我"
+      },
+      "regularPath": "/about.html",
+      "relativePath": "about.md",
+      "key": "v-e2914694",
+      "path": "/about.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "关于我",
+          "slug": "关于我"
+        },
+        {
+          "level": 2,
+          "title": "这是about",
+          "slug": "这是about"
+        },
+        {
+          "level": 2,
+          "title": "二级标题",
+          "slug": "二级标题"
+        },
+        {
+          "level": 3,
+          "title": "三级标题",
+          "slug": "三级标题"
+        }
+      ]
+    },
+    {
       "title": "aaa",
       "frontmatter": {},
       "regularPath": "/css/c-aaa.html",
@@ -119,12 +184,12 @@ export const siteData = {
       "path": "/css/c-aaa.html"
     },
     {
-      "title": "aaa",
+      "title": "这是css的readme",
       "frontmatter": {},
-      "regularPath": "/js/c-aaa.html",
-      "relativePath": "js/c-aaa.md",
-      "key": "v-4dacfccd",
-      "path": "/js/c-aaa.html"
+      "regularPath": "/js/",
+      "relativePath": "js/README.md",
+      "key": "v-62e5fae8",
+      "path": "/js/"
     },
     {
       "title": "bbb",
@@ -135,12 +200,20 @@ export const siteData = {
       "path": "/css/c-bbb.html"
     },
     {
-      "title": "这是css的readme",
+      "title": "ccc",
       "frontmatter": {},
-      "regularPath": "/js/",
-      "relativePath": "js/README.md",
-      "key": "v-62e5fae8",
-      "path": "/js/"
+      "regularPath": "/css/c-ccc.html",
+      "relativePath": "css/c-ccc.md",
+      "key": "v-ae8b192e",
+      "path": "/css/c-ccc.html"
+    },
+    {
+      "title": "aaa",
+      "frontmatter": {},
+      "regularPath": "/js/c-aaa.html",
+      "relativePath": "js/c-aaa.md",
+      "key": "v-4dacfccd",
+      "path": "/js/c-aaa.html"
     },
     {
       "title": "bbb",
@@ -157,14 +230,6 @@ export const siteData = {
       "relativePath": "js/c-ccc.md",
       "key": "v-7e61b2c9",
       "path": "/js/c-ccc.html"
-    },
-    {
-      "title": "ccc",
-      "frontmatter": {},
-      "regularPath": "/css/c-ccc.html",
-      "relativePath": "css/c-ccc.md",
-      "key": "v-ae8b192e",
-      "path": "/css/c-ccc.html"
     }
   ],
   "themeConfig": {
@@ -217,6 +282,16 @@ export const siteData = {
       [
         "@vuepress/last-updated",
         {}
+      ],
+      [
+        "@vuepress/pwa",
+        {
+          "serviceWorker": true,
+          "updatePopup": {
+            "message": "发现新内容可用",
+            "buttonText": "刷新"
+          }
+        }
       ]
     ]
   }
