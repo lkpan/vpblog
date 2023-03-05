@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>字符串的处理</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.92df36c2.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/12.17cc988a.js" as="script"><link rel="prefetch" href="/assets/js/10.7a6af31e.js"><link rel="prefetch" href="/assets/js/11.50db5c74.js"><link rel="prefetch" href="/assets/js/13.f10ac5f3.js"><link rel="prefetch" href="/assets/js/14.45051597.js"><link rel="prefetch" href="/assets/js/15.4e54c4f9.js"><link rel="prefetch" href="/assets/js/16.5490091d.js"><link rel="prefetch" href="/assets/js/17.0fe071ad.js"><link rel="prefetch" href="/assets/js/18.96652983.js"><link rel="prefetch" href="/assets/js/19.b91867c8.js"><link rel="prefetch" href="/assets/js/20.2638ed57.js"><link rel="prefetch" href="/assets/js/3.0bd007ff.js"><link rel="prefetch" href="/assets/js/4.d12742be.js"><link rel="prefetch" href="/assets/js/5.216cae74.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.17d0265e.js"><link rel="prefetch" href="/assets/js/8.26da85d6.js"><link rel="prefetch" href="/assets/js/9.9878dc1f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Vue/vue3学习笔记.html" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">语言（没啥用）</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">语言（没啥用）</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/language/japanese/" class="nav-link">
+  Japanese
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lkpan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  链接
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Vue/vue3学习笔记.html" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">语言（没啥用）</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">语言（没啥用）</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/language/japanese/" class="nav-link">
+  Japanese
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lkpan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  链接
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li><li><a href="/about.html" class="sidebar-link">关于我</a></li><li><section class="sidebar-group depth-0"><a href="/Vue/vue3学习笔记" class="sidebar-heading clickable"><span>Vue</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Vue/vue3学习笔记.html" class="sidebar-link">认识vue3</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="字符串的处理"><a href="#字符串的处理" class="header-anchor">#</a> 字符串的处理</h1> <h4 id="indexof-lastindexof-最后一个"><a href="#indexof-lastindexof-最后一个" class="header-anchor">#</a> indexof /     lastIndexOf(最后一个)</h4> <p>判断一个字符第一次出现在某个字符串的索引,如果包含返回它的索引，如果不包含返回-1.</p> <div class="language- extra-class"><pre class="language-text"><code>var str = 'abcde';
+console.log(str.indexOf('e'));   //4
+</code></pre></div><h4 id="substring-n-m"><a href="#substring-n-m" class="header-anchor">#</a> substring(n,m)</h4> <p>从索引n开始，截取m个字符，将截取的字符返回，对原字符串没有任何改变</p> <div class="language- extra-class"><pre class="language-text"><code>var str = 'abcde'
+var bc = str.substring(1,3);
+console.log(bc);  //&quot;bc&quot;
+</code></pre></div><h4 id="split"><a href="#split" class="header-anchor">#</a> split</h4> <div class="language- extra-class"><pre class="language-text"><code>var str = 'abcde'
+var a = str.split('');
+console.log(a);  //[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;, &quot;e&quot;]
+</code></pre></div><h4 id="replace-a-1"><a href="#replace-a-1" class="header-anchor">#</a> replace('a',1)</h4> <p>替换指定字符，返回替换后新的字符串，对原有字符串有改变(第一个参数可以是正则表达式) 只能替换一次 ，配合正则式修饰符g使用</p> <div class="language- extra-class"><pre class="language-text"><code>var str='aaaaee';
+var reg=/a/g;
+console.log(str.replace(reg,1));   //&quot;1111ee&quot;
+</code></pre></div><h4 id="match"><a href="#match" class="header-anchor">#</a> match()</h4> <p>可在字符串内检索指定的值，或找到一个或多个正则表达式的匹配。把找到的字符放在数组里，返回一个数组</p> <div class="language- extra-class"><pre class="language-text"><code>var str = 'aaaa3ebbd33';
+var reg = /a/g;
+console.log(str.match(reg));  //[&quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;a&quot;]
+</code></pre></div><h1 id="数组处理"><a href="#数组处理" class="header-anchor">#</a> 数组处理</h1> <h4 id="tostring-、tolocalestring-、valueof-方法。其中tostring-方法会返回由数组中每个值的字符串拼接而成的一个以逗号分隔的字符串-而调用valueof-返回的还是数组"><a href="#tostring-、tolocalestring-、valueof-方法。其中tostring-方法会返回由数组中每个值的字符串拼接而成的一个以逗号分隔的字符串-而调用valueof-返回的还是数组" class="header-anchor">#</a> toString()、toLocaleString()、valueOf()方法。其中toString()方法会返回由数组中每个值的字符串拼接而成的一个以逗号分隔的字符串，而调用valueOf()返回的还是数组</h4> <div class="language- extra-class"><pre class="language-text"><code>let newList = ['orange', 'apple', 'banana'];
+ 
+newList.toString() // &quot;orange,apple,banana&quot;
+newList.valueOf() // [&quot;orange&quot;, &quot;apple&quot;, &quot;banana&quot;]
+newList.toLocaleString() // &quot;orange,apple,banana&quot;
+ 
+console.log(newList.toString()) // &quot;orange,apple,banana&quot;
+alert(newList.valueOf()) // &quot;orange,apple,banana&quot;
+console.log(newList.toLocaleString()) // &quot;orange,apple,banana&quot;
+</code></pre></div><h4 id="join-方法可以使用不同的分隔符"><a href="#join-方法可以使用不同的分隔符" class="header-anchor">#</a> join() 方法可以使用不同的分隔符</h4> <div class="language- extra-class"><pre class="language-text"><code>let newList = ['orange', 'apple', 'banana'];
+console.log(newList.join('|')) // &quot;orange|apple|banana&quot;
+</code></pre></div><h4 id="array-from-方法用于将伪数组转为真正的数组"><a href="#array-from-方法用于将伪数组转为真正的数组" class="header-anchor">#</a> Array.from 方法用于将伪数组转为真正的数组</h4> <div class="language- extra-class"><pre class="language-text"><code>let arrayLike = {
+    '0': 'a',
+    '1': 'b',
+    '2': 'c',
+    length: 3
+};
+ 
+// ES5的写法
+var arr1 = [].slice.call(arrayLike); // ['a', 'b', 'c']
+ 
+// ES6的写法
+let arr2 = Array.from(arrayLike); // ['a', 'b', 'c']
+ 
+Array.from([1, 2, 3])
+// [1, 2, 3] 如果参数是一个真数组，会返回一个一摸一样的新数组
+</code></pre></div><h4 id="push-可以接受任意数量的参数-然后返回修改后的数组的长度。"><a href="#push-可以接受任意数量的参数-然后返回修改后的数组的长度。" class="header-anchor">#</a> push 可以接受任意数量的参数，然后返回修改后的数组的长度。</h4> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1, 2, 3, 4];
+ 
+console.log(arr.push(5)); // 5
+console.log(arr.push([1, 2])); // 6
+console.log(arr); // [ 1, 2, 3, 4, 5, [ 1, 2 ] ]
+</code></pre></div><h4 id="pop-可以从数组的末尾移除最后一项-减少数组的长度-返回删除项"><a href="#pop-可以从数组的末尾移除最后一项-减少数组的长度-返回删除项" class="header-anchor">#</a> pop  可以从数组的末尾移除最后一项，减少数组的长度，返回删除项</h4> <div class="language- extra-class"><pre class="language-text"><code>let arr = [1, 2, 3, 4];
+console.log(arr.pop()); // 4
+console.log(arr); // [1, 2, 3, ]
+</code></pre></div><p><a href="https://blog.csdn.net/Great_Zhou/article/details/112234716" target="_blank" rel="noopener noreferrer">更多更全的数组处理方法<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h1 id="对象处理方法"><a href="#对象处理方法" class="header-anchor">#</a> 对象处理方法</h1> <p><a href="https://blog.csdn.net/weixin_44247511/article/details/120881680" target="_blank" rel="noopener noreferrer">对象处理方法<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.92df36c2.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/12.17cc988a.js" defer></script>
+  </body>
+</html>

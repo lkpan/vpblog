@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript进阶第二天</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon-152x152.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/msapplication-icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.e8e4f3a3.css" as="style"><link rel="preload" href="/assets/js/app.92df36c2.js" as="script"><link rel="preload" href="/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/assets/js/11.50db5c74.js" as="script"><link rel="prefetch" href="/assets/js/10.7a6af31e.js"><link rel="prefetch" href="/assets/js/12.17cc988a.js"><link rel="prefetch" href="/assets/js/13.f10ac5f3.js"><link rel="prefetch" href="/assets/js/14.45051597.js"><link rel="prefetch" href="/assets/js/15.4e54c4f9.js"><link rel="prefetch" href="/assets/js/16.5490091d.js"><link rel="prefetch" href="/assets/js/17.0fe071ad.js"><link rel="prefetch" href="/assets/js/18.96652983.js"><link rel="prefetch" href="/assets/js/19.b91867c8.js"><link rel="prefetch" href="/assets/js/20.2638ed57.js"><link rel="prefetch" href="/assets/js/3.0bd007ff.js"><link rel="prefetch" href="/assets/js/4.d12742be.js"><link rel="prefetch" href="/assets/js/5.216cae74.js"><link rel="prefetch" href="/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/assets/js/7.17d0265e.js"><link rel="prefetch" href="/assets/js/8.26da85d6.js"><link rel="prefetch" href="/assets/js/9.9878dc1f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e8e4f3a3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Vue/vue3学习笔记.html" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">语言（没啥用）</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">语言（没啥用）</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/language/japanese/" class="nav-link">
+  Japanese
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lkpan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  链接
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div><div class="nav-item"><a href="/Vue/vue3学习笔记.html" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Language Menu" class="dropdown-title"><span class="title">语言（没啥用）</span> <span class="arrow down"></span></button> <button type="button" aria-label="Language Menu" class="mobile-dropdown-title"><span class="title">语言（没啥用）</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/chinese/" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/language/japanese/" class="nav-link">
+  Japanese
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/lkpan" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  链接
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Home</a></li><li><a href="/about.html" class="sidebar-link">关于我</a></li><li><section class="sidebar-group depth-0"><a href="/Vue/vue3学习笔记" class="sidebar-heading clickable"><span>Vue</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Vue/vue3学习笔记.html" class="sidebar-link">认识vue3</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript进阶第二天"><a href="#javascript进阶第二天" class="header-anchor">#</a> JavaScript进阶第二天</h1> <h2 id="每个构造函数都有一个原型对象"><a href="#每个构造函数都有一个原型对象" class="header-anchor">#</a> 每个构造函数都有一个原型对象</h2> <p>原型可以共享一个方法，把不变的方法写到prototype对象上</p> <h2 id="构造函数this指向问题"><a href="#构造函数this指向问题" class="header-anchor">#</a> 构造函数this指向问题</h2> <div class="language- extra-class"><pre><code>let that
+function Star(uname) {
+that = this
+console.log(this)
+this.uname = uname
+    }
+    //结果为（that === ldh）
+    //Star {uname: '刘德华'}  里面this结果
+</code></pre></div><p>原型实例对象里面的this指向的也是其调用者</p> <h2 id="原型对象-prototype"><a href="#原型对象-prototype" class="header-anchor">#</a> 原型对象  .prototype</h2> <p>是个对象，可以挂载函数，对象实例化不会多次创建原型上函数，节约内存</p> <h2 id="constructor作用"><a href="#constructor作用" class="header-anchor">#</a> constructor作用</h2> <p>因为使用直接= 的形式将会使其找不到原先的构造函数，需要construtor重新指向原来的构造函数</p> <div class="language- extra-class"><pre><code>实例对象.constructor指向构造函数Star
+Woman.prototype.constructor = Woman
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>
+Star.prototype = {
+// 从新指回创造这个原型对象的 构造函数
+      constructor: Star,
+      sing: function () {
+        console.log('唱歌')
+      },
+      dance: function () {
+        console.log('跳舞')
+      },
+    }
+</code></pre></div><h2 id="对象模型-proto"><a href="#对象模型-proto" class="header-anchor">#</a> 对象模型__proto__</h2> <div class="language- extra-class"><pre><code>__proto__与[[prototype]]一个意思
+function Star (uname) {
+      this.name = uname
+    }
+    let sb = new Star('sb')
+    console.log(sb.__proto__ === Star.prototype);//true
+    //Star：构造函数，sb实例对象，sb.__proto__ 以及Star.prototype都指向Star的原型对象
+</code></pre></div><div class="language-mermaid extra-class"><pre class="language-mermaid"><code><span class="token keyword">sequenceDiagram</span>
+<span class="token keyword">participant</span> A as 构造函数
+A<span class="token arrow operator">-&gt;&gt;</span>C<span class="token operator">:</span> new一个再 .prototype
+<span class="token keyword">participant</span> B as 实例对象
+<span class="token keyword">participant</span> C as 对象原型
+A<span class="token arrow operator">-&gt;&gt;</span>B<span class="token operator">:</span> new一个就可以产生实例对象
+B<span class="token arrow operator">-&gt;&gt;</span>C<span class="token operator">:</span> 实例对象.__proto__
+B<span class="token arrow operator">-&gt;&gt;</span>A<span class="token operator">:</span> 实例对象.__proto__.constructor
+C<span class="token arrow operator">-&gt;&gt;</span>A<span class="token operator">:</span> 原型即 prototype.constructor
+</code></pre></div><h2 id="原型继承-公共属性"><a href="#原型继承-公共属性" class="header-anchor">#</a> 原型继承 公共属性</h2> <p>需要公共属性一致，但不是同一个对象</p> <div class="language- extra-class"><pre class="language-text"><code>const Person = {
+      eays : 2,
+      hand : 1
+
+    }
+
+    function Woman() {
+
+    }
+    Woman.prototype = Person
+    Woman.prototype.constructor = Woman
+    Woman.prototype.baby = 'sb'
+    console.log(Woman.prototype);
+    
+    function Man () {
+
+    }
+    Man.prototype = Person
+    Man.prototype.constructor = Man
+    console.log(Man.prototype);
+    
+    //结果Man也加上了baby
+    {eays: 2, hand: 1, constructor: ƒ, baby: 'sb'}
+</code></pre></div><h4 id="改进方法"><a href="#改进方法" class="header-anchor">#</a> 改进方法</h4> <div class="language- extra-class"><pre class="language-text"><code>//使用构造函数来创建对象，可以获得相同的属性值对象，但不是同一个对象，只需改成
+function Person ()  {
+      this.eays = 2
+      this.hand = 1
+
+    }
+//应用
+Man.prototype = new Person
+</code></pre></div><h2 id="原型链"><a href="#原型链" class="header-anchor">#</a> 原型链</h2> <p>原型对象，实例对象的__proto__都可以指向其上一层的构造函数的__proto__，例如实例对象的__proto__可以找到他的构造函数，而构造函数的原型对象的__proto__指向上一级Object的prototype</p> <h4 id="对象都有对象原型-proto"><a href="#对象都有对象原型-proto" class="header-anchor">#</a> 对象都有对象原型__proto__</h4> <h3 id="原型链查找规则"><a href="#原型链查找规则" class="header-anchor">#</a> 原型链查找规则：</h3> <p>先查找自身有没有，如果没有就查找他的原型对象，还是没有再往上查找object的原型对象，还是没有就为null</p> <div class="language- extra-class"><pre class="language-text"><code>instanceof 检测构造函数是否在这条原型链上
+    console.log(ldh instanceof Person)
+    console.log(ldh instanceof Object)
+    console.log(ldh instanceof Array)
+    console.log([1, 2, 3] instanceof Array)
+    console.log(Array instanceof Object)
+</code></pre></div><h2 id="案例"><a href="#案例" class="header-anchor">#</a> 案例</h2> <p>箭头函数的妙用，此处必须使用箭头函数，使用fuction的话this指向的是<i>，使用箭头函数则指向我所需要的第一个this指向的标签</i></p> <div class="language- extra-class"><pre class="language-text"><code>this.modalBox.querySelector('i').addEventListener('click',  () =&gt; {
+//这个this指向我创建的标签
+        this.close() //这个指向&lt;i&gt;
+      })
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.92df36c2.js" defer></script><script src="/assets/js/2.733019b2.js" defer></script><script src="/assets/js/11.50db5c74.js" defer></script>
+  </body>
+</html>
